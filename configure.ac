@@ -4,6 +4,9 @@ AC_CONFIG_AUX_DIR(aux)
 AM_INIT_AUTOMAKE([1.11 foreign])
 AM_SILENT_RULES([yes])
 
+AC_PREFIX_DEFAULT(/)
+AC_PREFIX_PROGRAM(/usr)
+
 AC_CONFIG_SRCDIR([src/main.c])
 AC_CONFIG_HEADER([config.h])
 AC_CONFIG_FILES([Makefile include/Makefile man/Makefile src/Makefile test/Makefile pimd.service])
